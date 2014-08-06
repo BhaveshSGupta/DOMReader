@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<students>
+    <student dept="IT">
+        <roll_no>1</roll_no>
+        <first_name>Bhavesh</first_name>
+        <last_name>Gupta</last_name>
+        <mail>BhaveshSGupta@gmail.com</mail>
+    </student>
+    <student dept="CE">
+        <roll_no>2</roll_no>
+        <first_name>abc</first_name>
+        <last_name>efg</last_name>
+        <mail>ads@gmail.com</mail>
+    </student>
+</students>
