@@ -6,7 +6,7 @@
         <year>2008</year>
         <price>30</price>
     </book>
-        <book category="ce">
+    <book category="ce">
         <title lang="es">Bhavesh1</title>
         <author>author2</author>
         <year>2009</year>
@@ -16,6 +16,6 @@
         <title lang="in">Bhavesh1</title>
         <author>author2</author>
         <year>2010</year>
-        <price>32<price>
+        <price>32</price>
     </book>
 </bookstore>

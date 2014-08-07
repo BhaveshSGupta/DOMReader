@@ -10,6 +10,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -31,23 +32,25 @@ public class DOMReader {
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder = factory.newDocumentBuilder();
     Document doc = builder.parse(xmlFile);
-    System.out.println(doc.getDocumentElement().getNodeName());
+    //System.out.println(doc.getDocumentElement().getNodeName());
     String root = doc.getDocumentElement().getNodeName();
     System.out.println(root);    
     NodeList abh = doc.getElementsByTagName("book");
-        
-    /*
-    NodeList list = doc.getElementsByTagName("book");
-    NodeList doclist = (NodeList) doc.getElementsByTagName("student");
-    for(int i=0;i<list.getLength();i++)
+    Node a = abh.item(0);
+        String b = a.getChildNodes().toString();
+        String item = abh.item(0).getTextContent();
+        System.out.println(item);
+        /*
+        NodeList list = doc.getElementsByTagName("book");
+        NodeList doclist = (NodeList) doc.getElementsByTagName("student");
+        for(int i=0;i<list.getLength();i++)
         {
         Node book = list.item(i);
-    if(book.getNodeType()== Node.ELEMENT_NODE){
-    Element st = (Element) book;
-    System.out.println();
-    }
-        
+        if(book.getNodeType()== Node.ELEMENT_NODE){
+        Element st = (Element) book;
+        System.out.println();
         }
-    */
+        }
+         */
     }
 }
