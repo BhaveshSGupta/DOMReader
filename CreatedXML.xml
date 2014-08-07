@@ -2,8 +2,20 @@
 <bookstore>
     <book category="tympass">
         <title lang="en">Bhavesh</title>
-        <author>Bhavesh</author>
+        <author>author</author>
         <year>2008</year>
-        <price>2008</price>
+        <price>30</price>
+    </book>
+        <book category="ce">
+        <title lang="es">Bhavesh1</title>
+        <author>author2</author>
+        <year>2009</year>
+        <price>31</price>
+    </book>
+        <book category="tympass">
+        <title lang="in">Bhavesh1</title>
+        <author>author2</author>
+        <year>2010</year>
+        <price>32<price>
     </book>
 </bookstore>
