@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package domreader;
 
 import java.io.File;
@@ -34,7 +31,7 @@ public class DOMReader {
     Document doc = builder.parse(xmlFile);
     //System.out.println(doc.getDocumentElement().getNodeName());
     String root = doc.getDocumentElement().getNodeName();
-    System.out.println(root);    
+    System.out.println(root);
     NodeList abh = doc.getElementsByTagName("book");
     Node a = abh.item(0);
         String b = a.getChildNodes().toString();

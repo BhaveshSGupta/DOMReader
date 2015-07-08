@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package domreader;
 
 import java.io.File;
@@ -26,7 +23,7 @@ import org.w3c.dom.Text;
  */
 public class DOMCreater {
     public static void main(String ar[]) throws ParserConfigurationException, TransformerConfigurationException, TransformerException{
-    
+
     DocumentBuilderFactory factory= DocumentBuilderFactory.newInstance();
     DocumentBuilder builder= factory.newDocumentBuilder();
     Document doc= builder.newDocument();
@@ -39,9 +36,9 @@ public class DOMCreater {
     Element author = doc.createElement("author");
     Text authorname= doc.createTextNode("Giada De Laurentiis");
     Element year = doc.createElement("year");
-    Text yearno= doc.createTextNode("2005");   
+    Text yearno= doc.createTextNode("2005");
     Element price= doc.createElement("price");
-    Text priceval= doc.createTextNode("30.00");   
+    Text priceval= doc.createTextNode("30.00");
     price.appendChild(priceval);
     year.appendChild(yearno);
     author.appendChild(authorname);
@@ -57,7 +54,7 @@ public class DOMCreater {
     Source source = new DOMSource(doc);
     Result result = new StreamResult(new File("CreatedXML.xml"));
     tran.transform(source,result);
-    
-    
+
+
     }
 }
